@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <script defer src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+  <script defer src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+
+  <script defer src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script>
+  <script defer src="https://unpkg.com/@tensorflow-models/handpose@0.0.6/dist/handpose.js"></script>
+
+  <script defer src="js/app.js"></script>
+  <script defer src="js/knear.js"></script>
+
+  <title> Emoji HandPose</title>
+</head>
+<body>
+<div id="container">
+  <canvas id="output"></canvas>
+  <video id="video" playsinline></video>
+</div>
+
+<div class="flex">
+  <button id="thumbsUp">Thumbs up</button>
+  <button id="thumbsDown">Thumbs down</button>
+  <button id="heart">Heart hand</button>
+  <button id="batman">Batman hand</button>
+  <button id="predict">Predict</button>
+</div>
+
+<div id="array" class="none">Prediction</div>
+<div><h>This is the:</h>
+<p id="prediction"></p></div>
+</body>
+</html>
+
+
